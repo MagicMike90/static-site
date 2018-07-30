@@ -1,18 +1,8 @@
-import React from 'react'
-import Link from 'gatsby-link'
 import { graphql } from 'gatsby'
+import ArticleList from '../components/ArticleList'
 
-export default ({
-  data: {
-    allArticlesJson: { edges },
-  },
-}) => (
-  <div>
-    <h1>Local Articles</h1>
-    <Link to="/">Home</Link>
-    <ul>{edges.map(({ node: { title } }) => <li key={title}>{title}</li>)}</ul>
-  </div>
-)
+export default ArticleList('Local Articles')
+
 export const query = graphql`
   query LocalArticles {
     allArticlesJson(filter: { topic: { eq: "local" } }) {
