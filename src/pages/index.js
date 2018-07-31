@@ -19,6 +19,10 @@ const IndexPage = () => (
         <li>
           <Link to="/sports/">Sports</Link>
         </li>
+
+        <div>
+          <Link to="/counter/">Counter</Link>
+        </div>
       </ul>
     </div>
   </Layout>
