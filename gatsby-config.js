@@ -11,12 +11,13 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    'gatsby-transformer-json',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-emotion`,
+    'gatsby-transformer-json',
   ],
 }
