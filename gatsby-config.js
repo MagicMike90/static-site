@@ -8,7 +8,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -17,6 +17,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     'gatsby-transformer-json',
   ],
